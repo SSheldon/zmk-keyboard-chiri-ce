@@ -1,0 +1,22 @@
+if BOARD_CHIRI_CE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Chiri CE Rev. 1"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if BOARD_CHIRI_CE_LEFT || BOARD_CHIRI_CE_RIGHT
+
+config BOARD
+    default "chiri_ce"
+
+config RP2_FLASH_W25Q080
+    default y
+
+config ZMK_SPLIT
+    default y
+
+endif
