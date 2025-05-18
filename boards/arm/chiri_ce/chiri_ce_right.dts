@@ -29,6 +29,10 @@
     col-offset = <6>;
 };
 
+&five_column_transform {
+    col-offset = <6>;
+};
+
 &pinctrl {
     // rh has pins inverted
     pio0_uart0_default: pio0_uart0_default {
